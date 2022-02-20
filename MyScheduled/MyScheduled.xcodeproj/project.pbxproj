@@ -17,6 +17,10 @@
 		A0FD965827C1588D0056D76E /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD965727C1588D0056D76E /* ContactsViewController.swift */; };
 		A0FD965B27C15E0A0056D76E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = A0FD965A27C15E0A0056D76E /* FSCalendar */; };
 		A0FD965F27C164A80056D76E /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD965E27C164A80056D76E /* UIColor + Extension.swift */; };
+		A0FD966327C2DC310056D76E /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD966227C2DC310056D76E /* ScheduleTableViewCell.swift */; };
+		A0FD966527C2DFC10056D76E /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD966427C2DFC10056D76E /* UIFont + Extension.swift */; };
+		A0FD966727C2E3BF0056D76E /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD966627C2E3BF0056D76E /* UIStackView + Extension.swift */; };
+		A0FD966927C2EE700056D76E /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD966827C2EE700056D76E /* UILabel + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		A0FD965527C158850056D76E /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		A0FD965727C1588D0056D76E /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		A0FD965E27C164A80056D76E /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		A0FD966227C2DC310056D76E /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		A0FD966427C2DFC10056D76E /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		A0FD966627C2E3BF0056D76E /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		A0FD966827C2EE700056D76E /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A0FD964F27C156170056D76E /* Application */,
+				A0FD966027C2DC150056D76E /* Views */,
 				A0FD965027C156210056D76E /* Controllers */,
 				A0FD965C27C164890056D76E /* Extensions */,
 				A0FD965127C156430056D76E /* Resources */,
@@ -114,8 +123,27 @@
 			isa = PBXGroup;
 			children = (
 				A0FD965E27C164A80056D76E /* UIColor + Extension.swift */,
+				A0FD966427C2DFC10056D76E /* UIFont + Extension.swift */,
+				A0FD966627C2E3BF0056D76E /* UIStackView + Extension.swift */,
+				A0FD966827C2EE700056D76E /* UILabel + Extension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A0FD966027C2DC150056D76E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0FD966127C2DC1F0056D76E /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0FD966127C2DC1F0056D76E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0FD966227C2DC310056D76E /* ScheduleTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,12 +222,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FD966527C2DFC10056D76E /* UIFont + Extension.swift in Sources */,
 				A0FD965F27C164A80056D76E /* UIColor + Extension.swift in Sources */,
 				A0FD964027C152C30056D76E /* MainTabBarViewController.swift in Sources */,
+				A0FD966727C2E3BF0056D76E /* UIStackView + Extension.swift in Sources */,
 				A0FD963C27C152C30056D76E /* AppDelegate.swift in Sources */,
 				A0FD965627C158850056D76E /* TasksViewController.swift in Sources */,
+				A0FD966927C2EE700056D76E /* UILabel + Extension.swift in Sources */,
 				A0FD963E27C152C30056D76E /* SceneDelegate.swift in Sources */,
 				A0FD965427C158600056D76E /* ScheduleViewController.swift in Sources */,
+				A0FD966327C2DC310056D76E /* ScheduleTableViewCell.swift in Sources */,
 				A0FD965827C1588D0056D76E /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
