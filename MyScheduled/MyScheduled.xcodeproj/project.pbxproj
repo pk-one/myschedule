@@ -15,6 +15,8 @@
 		A0FD965427C158600056D76E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD965327C158600056D76E /* ScheduleViewController.swift */; };
 		A0FD965627C158850056D76E /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD965527C158850056D76E /* TasksViewController.swift */; };
 		A0FD965827C1588D0056D76E /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD965727C1588D0056D76E /* ContactsViewController.swift */; };
+		A0FD965B27C15E0A0056D76E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = A0FD965A27C15E0A0056D76E /* FSCalendar */; };
+		A0FD965F27C164A80056D76E /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD965E27C164A80056D76E /* UIColor + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,7 @@
 		A0FD965327C158600056D76E /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		A0FD965527C158850056D76E /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		A0FD965727C1588D0056D76E /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		A0FD965E27C164A80056D76E /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FD965B27C15E0A0056D76E /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +66,7 @@
 			children = (
 				A0FD964F27C156170056D76E /* Application */,
 				A0FD965027C156210056D76E /* Controllers */,
+				A0FD965C27C164890056D76E /* Extensions */,
 				A0FD965127C156430056D76E /* Resources */,
 			);
 			path = MyScheduled;
@@ -97,6 +102,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A0FD965C27C164890056D76E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0FD965D27C164980056D76E /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0FD965D27C164980056D76E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A0FD965E27C164A80056D76E /* UIColor + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +134,9 @@
 			dependencies = (
 			);
 			name = MyScheduled;
+			packageProductDependencies = (
+				A0FD965A27C15E0A0056D76E /* FSCalendar */,
+			);
 			productName = MyScheduled;
 			productReference = A0FD963827C152C30056D76E /* MyScheduled.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +165,9 @@
 				Base,
 			);
 			mainGroup = A0FD962F27C152C30056D76E;
+			packageReferences = (
+				A0FD965927C15E0A0056D76E /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = A0FD963927C152C30056D76E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FD965F27C164A80056D76E /* UIColor + Extension.swift in Sources */,
 				A0FD964027C152C30056D76E /* MainTabBarViewController.swift in Sources */,
 				A0FD963C27C152C30056D76E /* AppDelegate.swift in Sources */,
 				A0FD965627C158850056D76E /* TasksViewController.swift in Sources */,
@@ -382,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0FD965927C15E0A0056D76E /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0FD965A27C15E0A0056D76E /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0FD965927C15E0A0056D76E /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0FD963027C152C30056D76E /* Project object */;
 }
