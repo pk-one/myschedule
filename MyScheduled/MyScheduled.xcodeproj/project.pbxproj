@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A007781827C7847B00369EA2 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007781727C7847B00369EA2 /* TaskTableViewCell.swift */; };
 		A0FD963C27C152C30056D76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD963B27C152C30056D76E /* AppDelegate.swift */; };
 		A0FD963E27C152C30056D76E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD963D27C152C30056D76E /* SceneDelegate.swift */; };
 		A0FD964027C152C30056D76E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD963F27C152C30056D76E /* MainTabBarViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A007781727C7847B00369EA2 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A0FD963827C152C30056D76E /* MyScheduled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyScheduled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FD963B27C152C30056D76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0FD963D27C152C30056D76E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A0FD966227C2DC310056D76E /* ScheduleTableViewCell.swift */,
+				A007781727C7847B00369EA2 /* TaskTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				A0FD965627C158850056D76E /* TasksViewController.swift in Sources */,
 				A0FD966927C2EE700056D76E /* UILabel + Extension.swift in Sources */,
 				A0FD963E27C152C30056D76E /* SceneDelegate.swift in Sources */,
+				A007781827C7847B00369EA2 /* TaskTableViewCell.swift in Sources */,
 				A0FD965427C158600056D76E /* ScheduleViewController.swift in Sources */,
 				A0FD966327C2DC310056D76E /* ScheduleTableViewCell.swift in Sources */,
 				A0FD965827C1588D0056D76E /* ContactsViewController.swift in Sources */,

@@ -13,13 +13,13 @@ class ScheduleTableViewCell: UITableViewCell {
     static let cellId = "ScheduleTableViewCell"
     private let lessonNameLabel = UILabel(text: "Программирование", textColor: .black, font: .avenirNextDemiBold20(), textAlignment: .left)
     private let teacherNameLabel = UILabel(text: "Антонов Антон Анатольевич", textColor: .black, font: .avenirNext20(), textAlignment: .right)
-    private let lessonTimeLabel = UILabel(text: "08:00", textColor: .black, font: .avenirNext20(), textAlignment: .left)
+    private let lessonTimeLabel = UILabel(text: "08:00", textColor: .black, font: .avenirNextDemiBold20(), textAlignment: .left)
     private let typeLabel = UILabel(text: "Тип:", textColor: .black, font: .avenirNext14(), textAlignment: .right)
-    private let lessonTypeLabel = UILabel(text: "Лекция", textColor: .black, font: .avenirNext14(), textAlignment: .left)
+    private let lessonTypeLabel = UILabel(text: "Лекция", textColor: .black, font: .avenirNextDemiBold14(), textAlignment: .left)
     private let buildingLabel = UILabel(text: "Корпус:", textColor: .black, font: .avenirNext14(), textAlignment: .right)
-    private let lessonBuildingLabel = UILabel(text: "1", textColor: .black, font: .avenirNext14(), textAlignment: .left)
+    private let lessonBuildingLabel = UILabel(text: "1", textColor: .black, font: .avenirNextDemiBold14(), textAlignment: .left)
     private let auditoryLabel = UILabel(text: "Аудитория:", textColor: .black, font: .avenirNext14(), textAlignment: .right)
-    private let lessonAuditoryLabel = UILabel(text: "101", textColor: .black, font: .avenirNext14(), textAlignment: .left)
+    private let lessonAuditoryLabel = UILabel(text: "101", textColor: .black, font: .avenirNextDemiBold14(), textAlignment: .left)
 
     private var topStackView = UIStackView()
     private var bottomStackView = UIStackView()
@@ -35,6 +35,7 @@ class ScheduleTableViewCell: UITableViewCell {
     }
     
     private func setupViews() {
+        self.selectionStyle = .none
         topStackView = UIStackView(arrangedSubviews: [lessonNameLabel,
                                                   teacherNameLabel],
                                 axis: .horizontal,
